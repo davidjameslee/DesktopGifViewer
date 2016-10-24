@@ -4,9 +4,34 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopGifViewer"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow"
+        AllowsTransparency="True" WindowStyle="None"
+        Topmost="True">
+    <Window.Background>
+        <SolidColorBrush Opacity="0" Color="White" />
+    </Window.Background>
+    <DockPanel>
+        <Menu x:Name="menu"
+              DockPanel.Dock="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Open"
+                          Click="Menu_Open_Click"></MenuItem>
+                <MenuItem Header="Flip Menu Position"
+                          Click="Menu_Flip_Click"></MenuItem>
+                <MenuItem Header="Increase Scale"
+                          Click="Menu_ScaleUp_Click"
+                          StaysOpenOnClick="True"></MenuItem>
+                <MenuItem Header="Decrease Scale"
+                          Click="Menu_ScaleDown_Click"
+                          StaysOpenOnClick="True"></MenuItem>
+                <MenuItem Header="Close"
+                          Click="Menu_Exit_Click "></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Image x:Name="gif"
+               gif:ImageBehavior.AnimatedSource="Resources/Placeholder.png"
+               MouseDown="Image_MouseDown"></Image>
+    </DockPanel>
 </Window>
