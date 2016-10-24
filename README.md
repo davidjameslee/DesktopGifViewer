@@ -8,11 +8,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-This relies on the library  for displaying animated gifs. Can be installed using the nuget package.
+This relies on the library, [WpfAnimatedGif](https://github.com/XamlAnimatedGif/WpfAnimatedGif) for displaying animated gifs. Can be installed using the nuget package.
 
 ## Built With
 
-* [WpfAnimatedGif](https://github.com/XamlAnimatedGif/WpfAnimatedGif/blob/master/LICENSE.txt) - The library for displaying the animated gif
+* [WpfAnimatedGif](https://github.com/XamlAnimatedGif/WpfAnimatedGif) - The library for displaying the animated gif
 
 ## License
 
